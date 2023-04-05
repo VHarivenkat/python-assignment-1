@@ -1,0 +1,129 @@
+1)
+
+a=int(input("Enter the principal value"))
+
+b=int(input("Enter the years:"))
+
+d=input("The person is senior citizen or not:")
+
+c=input("The person is male/female:")
+
+print(c)
+
+x=b*12
+
+if d==("yes" or "y"):
+
+    if c== "male":
+
+        m_simple_intrest=(a*12/100)*x
+
+        print("The simple interest is",m_simple_intrest)
+
+    elif c=="female":
+
+         f_simple_intrest=(a*15/100)*x
+
+         print("The simple intrest is",f_simple_intrest)
+
+    else:
+
+        print("Enter the correct character")
+
+else:
+
+    n_simple_intrest=(a*10/100)*x
+
+    print("The simple intrest is",n_simple_intrest)
+
+2)
+
+grade = input("Enter the Grade: ")
+
+salary = float(input("Enter the Salary: "))
+
+if grade == 'A':
+
+    bonus = 0.05 * salary
+
+elif grade == 'B':
+
+    bonus = 0.1 * salary
+
+else:
+
+    print("Invalid Grade")
+
+if salary < 10000:
+
+    bonus += 0.02 * salary
+
+total_salary = salary + bonus
+
+print("Bonus",bonus)
+
+print("Total salary",total_salary)
+
+3)
+
+month = input("Input the month (e.g. January, February etc.): ")
+
+day = int(input("Input the day: "))
+
+if month in ('January', 'February', 'March'):
+
+	season = 'winter'elif month in ('April', 'May', 'June'):
+
+	season = 'summer'
+
+elif month in ('July', 'August', 'September'):
+
+	season = 'spring'
+
+else:
+
+	season = 'fall'
+
+if (month == 'March') and (day > 19):
+
+	season = 'summer'
+
+elif (month == 'June') and (day > 20):
+
+	season = 'summer'
+
+elif (month == 'September') and (day > 21):
+
+	season = 'autumn'
+
+elif (month == 'December') and (day > 20):
+
+	season = 'winter'
+
+print("Season is",season
+
+4)
+
+#pattern 1
+
+n=int(input("Enter the value:"))
+
+for i in range(0,n):
+
+    for j in range(0,i+1):
+
+        print("*",end=" ")
+
+    print()
+
+#pattern 2
+
+n = int(input("Enter the number of rows: "))  
+
+for i in range(n + 1, 0, -1):    
+
+    for j in range(0, i - 1):  
+
+        print("*", end=' ')  
+
+    print()
